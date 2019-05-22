@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomnav_menu_noten"
+        android:icon="@drawable/ic_grade_black_24dp"
+        android:title="Noten"></item>
+    <item
+        android:id="@+id/bottomnav_menu_stundenplan"
+        android:title="Agenda"
+        android:icon="@drawable/ic_baseline_assignment_24px"></item>
+    <item
+        android:title="Absenzen"
+        android:id="@+id/bottomnav_menu_absenzen"
+        android:icon="@drawable/ic_dashboard_black_24dp"></item>
+</menu>
