@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -128,8 +129,11 @@ public class showgrades extends AppCompatActivity {
                                     @Override
                                     public View getView(int position, View convertView, ViewGroup parent) {
                                         View view = super.getView(position, convertView, parent);
-                                        view.setBackgroundColor(Color.parseColor("#" + colors[position]));
                                         view.setBackgroundResource(R.drawable.customboxes);
+                                        if (colors[position].equals("fb8c60")) {
+                                            view.setBackgroundResource(R.drawable.customboxes_ausfall);
+                                        }
+                                        //view.setBackgroundColor(Color.parseColor("#" + colors[position]));
                                         return view;
                                     }
                                 };
@@ -231,8 +235,11 @@ public class showgrades extends AppCompatActivity {
                                     @Override
                                     public View getView(int position, View convertView, ViewGroup parent) {
                                         View view = super.getView(position, convertView, parent);
-                                        view.setBackgroundColor(Color.parseColor("#" + colors[position]));
                                         view.setBackgroundResource(R.drawable.customboxes);
+                                        if (colors[position].equals("fb8c60")) {
+                                            view.setBackgroundResource(R.drawable.customboxes_ausfall);
+                                        }
+                                        //view.setBackgroundColor(Color.parseColor("#" + colors[position]));
                                         return view;
                                     }
                                 };
