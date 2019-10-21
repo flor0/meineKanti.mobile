@@ -317,7 +317,7 @@ public class showgrades extends AppCompatActivity {
         colors = new String[agendaUl.size()];
         int n = 0;
         for (Element elem : agendaUl) {
-            colors[n] = elem.attr("style").substring(19, elem.attr("style").indexOf(";"));
+            colors[n] = elem.attr("style").substring(elem.attr("style").indexOf("#") + 1, elem.attr("style").indexOf(";"));
             n++;
         }
 
